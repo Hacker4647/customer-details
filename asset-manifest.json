@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/customer-details/static/css/main.9b9462e4.css",
+    "main.js": "/customer-details/static/js/main.00420c97.js",
+    "static/js/453.f3e58280.chunk.js": "/customer-details/static/js/453.f3e58280.chunk.js",
+    "static/media/IRONMAN.jpg": "/customer-details/static/media/IRONMAN.d380300d2e65fb32af82.jpg",
+    "index.html": "/customer-details/index.html",
+    "main.9b9462e4.css.map": "/customer-details/static/css/main.9b9462e4.css.map",
+    "main.00420c97.js.map": "/customer-details/static/js/main.00420c97.js.map",
+    "453.f3e58280.chunk.js.map": "/customer-details/static/js/453.f3e58280.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b9462e4.css",
+    "static/js/main.00420c97.js"
+  ]
+}
