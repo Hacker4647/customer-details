@@ -7,16 +7,16 @@ const dbConfig = {
   host: 'localhost',
   database: 'customer_data',
   password: 'Inthu@4647',
-  port: 5432, // Change this according to your PostgreSQL port
+  port: 5432, 
 };
 
-// Create a PostgreSQL client
+// Creating a PostgreSQL client
 const client = new Client(dbConfig);
 
-// Connect to the PostgreSQL database
+// Connecting to the PostgreSQL database
 client.connect();
 
-// Specify the table and query
+// Specifying the table and query
 const tableName = 'customers_data';
 const query = `SELECT * FROM ${tableName}`;
 

@@ -23,9 +23,9 @@ function App() {
         return a.created_at.localeCompare(b.created_at);
       } 
       
-      // else if (sortedBy === 'time') {
-      //   return a.created_at.localeCompare(b.created_at) || a.created_at.localeTime().localeCompare(b.created_at.localeTime());
-      // } 
+      else if (sortedBy === 'time') {
+        return   a.created_at.localeCompare(b.created_at)
+      } 
 
       else {
         return 0;
@@ -46,10 +46,10 @@ function App() {
      <select className="sorting-text" onChange={(e) => setSortedBy(e.target.value)}>
         <option value="">Sort by...</option>
         <option value="date">Sort by Date</option>
-        {/* <option value="time">Sort by Time</option> */}
+        <option value="time">Sort by Time</option> 
       </select>
       <p >Customer Details</p>
-     <input type="text" className="text-end" placeholder="Search Name/Location..." onChange={(e) => setSearch(e.target.value)} /> 
+     <input type="text" className="text-end" placeholder="  Search Name/Location..." onChange={(e) => setSearch(e.target.value)} /> 
      </div>
       <table>
         {/* Render table headers */}
@@ -85,12 +85,18 @@ function App() {
         </tbody>
       </table>
       {/* Render pagination */}
+      <div class="made-with-love">
+         <span> Made with <i id="heart">💖</i>&amp;<i id="coffee">☕</i> by Developer Inthu</span>
+        </div>
       <div className="text-container">
+      <div >
         {Array.from({ length: Math.ceil(filteredAndSortedCustomers.length / recordsPerPage) }).map((_, index) => (
           <button key={index} onClick={() => paginate(index + 1)} >
           Page {index + 1} 
           </button>
         ))}
+      </div>
+      
       </div>
     </div>
   );

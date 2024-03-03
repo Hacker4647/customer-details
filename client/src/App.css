@@ -19,7 +19,7 @@ body{
   text-align: center;
   width: 80vw;
   margin-left: 10rem;
-  margin-top: .8rem;
+  margin-top: 0.5rem;
 }
 
 .container p{
@@ -43,7 +43,11 @@ input{
   width: 16rem;
   height: 2rem;
   border-radius: 8px;
-  box-shadow:0 10px 20px rgba(0, 183, 255, 0.845) ;
+  text-align: center;
+}
+
+input:hover{
+  box-shadow:0 10px 20px rgba(0, 183, 255, 0.908) ;
 }
 
 table{
@@ -53,14 +57,14 @@ table{
   border-collapse: collapse;
   text-align: center;
   margin: auto;
-  margin-top: 20px;
-  background: #ffffff79;
- 
+  margin-top: 10px;
+  background: #ffffff65;
+  table-layout: fixed;
 }
 th{
   padding: 0.8rem;
-  background-color: #fff;
-  color: black;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 th:first-of-type{
@@ -111,6 +115,7 @@ td{
 .text-container{
   display: flex;
   justify-content: center;
+  margin-left: 2rem;
 }
 
 .text-container button{
@@ -123,6 +128,50 @@ td{
 
 .text-container button:hover{
   width: 60px;
+  height: 40px;
   background-color: green;
   color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.made-with-love {
+  padding: 10px;
+  position: absolute;
+  left: 0; right: 0; bottom: 15;
+  text-align: left;
+  font-size: 15px;
+  color: #fff;
+  z-index: -1;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+}
+#heart {
+  font-size: 20px;
+}
+#coffee {
+  font-size: 20px;
+  position: relative;
+}
+
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 4px;
+  position: relative;
+  
+}
+.made-with-love span {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 4px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.15em;
 }
